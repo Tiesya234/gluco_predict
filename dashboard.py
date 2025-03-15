@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
+import sklearn
 
 # Load model dan dataset
 model_path = "model_diabetes1.pkl"
