@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
-import os
 
-# Tentukan lokasi model dan dataset secara dinamis
-model_path = os.path.join(os.getcwd(), "model_diabetes1.pkl")
-dataset_path = os.path.join(os.getcwd(), "dataset_fix1.csv")
+# Load model dan dataset
+model_path = "model_diabetes1.pkl"
+dataset_path = "dataset_fix1.csv"
 
 # Load model
 with open(model_path, 'rb') as file:
