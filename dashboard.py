@@ -2,14 +2,17 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
+import os
+
+# Tentukan lokasi model dan dataset secara dinamis
+model_path = os.path.join(os.getcwd(), "model_diabetes1.pkl")
+dataset_path = os.path.join(os.getcwd(), "dataset_fix1.csv")
 
 # Load model
-model_path = "C:/users/UTS_datming/model_diabetes1.pkl"
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
 # Load dataset untuk referensi fitur
-dataset_path = "C:/users/UTS_datming/dataset_fix1.csv"
 df = pd.read_csv(dataset_path)
 
 # Ambil nama fitur dari dataset
