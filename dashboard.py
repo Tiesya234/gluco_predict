@@ -21,7 +21,7 @@ features = df.columns[:-1]  # Asumsi kolom terakhir adalah label
 # Judul aplikasi
 st.markdown("""
     <h1 style='text-align: center;'> 🩺GlucoPredict</h1>
-    <p style='text-align: justify;'>Model ini menggunakan <a href='https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database'>Pima Indians Diabetes Dataset</a> untuk membantu tenaga medis dalam menganalisis risiko diabetes pasien.</p>
+    <p style='text-align: justify;'>Model ini menggunakan <a href='https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data'>Diabetes Prediction Dataset</a> untuk membantu tenaga medis dalam menganalisis risiko diabetes pasien.</p>
 """, unsafe_allow_html=True)
 st.image("gambarcekguladarah.png")  # Menambahkan gambar di bawah judul
 
